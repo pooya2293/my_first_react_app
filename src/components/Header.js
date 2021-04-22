@@ -13,7 +13,7 @@ Header.defaultProps = {
 }
 
 Header.propTypes = {
-	title: PropTypes.string,
+	title: PropTypes.string.isRequierd,
 }
 
 export default Header
