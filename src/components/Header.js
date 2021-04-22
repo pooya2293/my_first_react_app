@@ -5,7 +5,7 @@ const Header = ({ title }) => {
 	return (
 		<header className='header'>
 			<h1>{title}</h1>
-			<Buttons />
+			<Buttons color='green' text='Hello' />
 		</header>
 	)
 }
