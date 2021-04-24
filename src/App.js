@@ -23,10 +23,14 @@ const [tasks, setTasks] = useState([
 	}
 ])
 
+const deletTask = (id)=>{
+	console.log('delete',id)
+}
+
 	return (
 		<div className='container'>
 			<Header />
-			<MyTasks tasks={tasks} />
+			<MyTasks tasks={tasks} onDelete={deletTask} />
 		</div>
 	)
 }
