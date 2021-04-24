@@ -22,7 +22,7 @@ const My_Tasks = () => {
 	return (
 		<>
 			{tasks.map((n)=>(
-				<h3>{n.text}</h3>
+				<h3 key={n.id}>{n.text}</h3>
 				))
 			}
 		</>
