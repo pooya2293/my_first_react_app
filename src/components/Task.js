@@ -1,7 +1,7 @@
-const Task = () => {
+const Task = ({ tsk }) => {
 	return (
 		<div className='task'>
-			<h3>My task</h3>
+			<h3>{tsk.text}</h3>
 		</div>
 	)
 }
