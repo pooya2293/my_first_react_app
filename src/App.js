@@ -27,7 +27,9 @@ const [tasks, setTasks] = useState([
 
 // Add Task
 const addTask = (tsk)=>{
-	console.log(tsk);
+	const id = Math.floor(Math.random()*10000)+1
+	const newTask = { id, ...tsk }
+	setTasks([...tasks, newTask])
 }
 
 
