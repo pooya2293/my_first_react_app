@@ -1,4 +1,6 @@
-const tasks = [
+import { useState } from 'react'
+const MyTasks = () => {
+	const [tasks, setTasks] = useState([
 	{
 		id:1,
 		text:'move body',
@@ -17,8 +19,7 @@ const tasks = [
 		day:'00/02/05 at 08:00am',
 		reminder: true,
 	}
-]
-const MyTasks = () => {
+])
 	return (
 		<>
 			{tasks.map((n)=>(
