@@ -1,10 +1,10 @@
 import Header from './components/Header'
-import My_Tasks from './components/My_Tasks'
+import MyTasks from './components/MyTasks'
 function App() {
 	return (
 		<div className='container'>
 			<Header />
-			<My_Tasks />
+			<MyTasks />
 		</div>
 	)
 }

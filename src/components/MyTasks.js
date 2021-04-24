@@ -18,7 +18,7 @@ const tasks = [
 		reminder: true,
 	}
 ]
-const My_Tasks = () => {
+const MyTasks = () => {
 	return (
 		<>
 			{tasks.map((n)=>(
@@ -29,4 +29,4 @@ const My_Tasks = () => {
 	)
 }
 
-export default My_Tasks
+export default MyTasks
