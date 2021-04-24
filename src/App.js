@@ -25,6 +25,12 @@ const [tasks, setTasks] = useState([
 	}
 ])
 
+// Add Task
+const addTask = (tsk)=>{
+	console.log(tsk);
+}
+
+
 // Delete tsk
 const deletTask = (id)=>{
 	setTasks(tasks.filter((tsk)=>
@@ -46,7 +52,7 @@ const reminder = (id)=>{
 	return (
 		<div className='container'>
 			<Header />
-			<AddTask />
+			<AddTask onAdd={addTask} />
 			{tasks.length ? <MyTasks tasks={tasks} onDelete={deletTask} onToggle={reminder} /> : 'no task for show'}
 		</div>
 	)
