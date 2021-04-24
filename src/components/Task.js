@@ -1,7 +1,8 @@
 import { FaTimes } from 'react-icons/fa'
-const Task = ({ tsk, onDelete }) => {
+const Task = ({ tsk,onDelete,onToggle }) => {
 	return (
-		<div className='task'>
+		<div className='task'
+		onClick={()=>onToggle(tsk.id)}>
 			<h3>
 				{tsk.text} 
 				<FaTimes 
