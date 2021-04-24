@@ -54,9 +54,12 @@ const reminder = (id)=>{
 
 	return (
 		<div className='container'>
-			<Header onAdd={()=> 
-				setShowAddTask(!showAddTask)} />
-			{showAddTask && <AddTask onAdd={addTask} />}
+			<Header 
+			onAdd={()=> 
+			setShowAddTask(!showAddTask)} 
+			showAdd={showAddTask}/>
+			{showAddTask && 
+			<AddTask onAdd={addTask} />}
 			{tasks.length ? <MyTasks tasks={tasks} onDelete={deletTask} onToggle={reminder} /> : 'no task for show'}
 		</div>
 	)
